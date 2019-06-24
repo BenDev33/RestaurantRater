@@ -7,7 +7,7 @@
 <h2>Restaurants</h2>
 
 <p>
-    @Html.ActionLink("Rate a Restuarant", "Create")
+    @Html.ActionLink("Rate a Restaurant", "Create")
 </p>
 
 <table class="table">
@@ -36,7 +36,7 @@
                 @Html.DisplayFor(item => restaurant.FoodType)
             </td>
             <td>
-                @Html.ActionLink("Update", "Edit", new { id = restaurant.RestaurantID }) |
+                @Html.ActionLink("Update", "Update", new { id = restaurant.RestaurantID }) |
                 @Html.ActionLink("More Info", "Details", new { id = restaurant.RestaurantID }) |
                 @Html.ActionLink("Delete", "Delete", new { id = restaurant.RestaurantID })
             </td>
