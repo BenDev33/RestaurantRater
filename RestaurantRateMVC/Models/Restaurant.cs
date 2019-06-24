@@ -10,9 +10,13 @@ namespace RestaurantRateMVC.Models
     public class Restaurant
     {
         public int RestaurantID { get; set; }
+
+        [Required]
         public string Name { get; set; }
         [Display(Name = "Food Type")]
+
         public string FoodType { get; set; }
+
         public double Rating { get; set; }
     }
 
