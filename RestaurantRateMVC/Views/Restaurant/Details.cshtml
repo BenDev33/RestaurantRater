@@ -35,7 +35,7 @@
         @Html.AntiForgeryToken()
         
         <p>
-            @Html.ActionLink("Update", "Update") |
+            @Html.ActionLink("Update", "Update", new { id = Model.RestaurantID }) |
             @Html.ActionLink("Back to List", "Index")
         </p>
      
